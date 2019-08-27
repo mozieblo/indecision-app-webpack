@@ -14,7 +14,7 @@ class IndecisionApp extends React.Component {
     }
 
     componentDidMount() {
-        console.log('component did mount! fetching data');
+        //console.log('component did mount! fetching data');
         try {
             const json = localStorage.getItem('options');
             const options = JSON.parse(json);
@@ -28,7 +28,7 @@ class IndecisionApp extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        console.log('component did update saving data');
+        //console.log('component did update saving data');
         if (prevState.options.length !== this.state.options.length) {
                 const json = JSON.stringify(this.state.options);
                 localStorage.setItem('options', json);
@@ -188,4 +188,5 @@ class AddOption extends React.Component {
 }
 
 ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
+
 
