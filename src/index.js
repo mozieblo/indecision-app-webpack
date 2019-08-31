@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import IndecisionApp from './components/IndecisionApp'
+import IndecisionApp from './components/IndecisionApp';
+import './styles/styles.scss';
+import 'normalize.css/normalize.css';
 import isSenior, { isAdult, canDrink } from './person.js'; // test
 
 console.log(isAdult(25));
