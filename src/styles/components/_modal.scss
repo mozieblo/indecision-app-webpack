@@ -14,15 +14,10 @@
  }
 
  .ReactModalPortal .ReactModal__Overlay--before-close {
-    opacity: 0;
+   opacity: 0;
  }
 
- .modal {
-    display: block;
-    top: unset;
-    left: unset;
-    bottom: unset;
-    right: unset;
+ .modal1 {
     background: $light-blue;
     color: white;
     max-width: 30rem;
